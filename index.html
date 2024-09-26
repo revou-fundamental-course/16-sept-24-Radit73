@@ -7,6 +7,135 @@
     <link rel="stylesheet" href="css\style.css">
 </head>
 <body>
-    
+    <header class="main-header">
+<!-- Logo -->
+        <div class="logo-nav">
+            <img src="assets\profile.jpg" height="100%" width="100%">
+        </div>
+
+<!-- Navigation -->
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#profile">Our Staff</a>
+            <a href="#portofolio">About</a>
+            <a href="#section-message-us">Message Us</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+<!-- Home -->
+        <section id="home">
+            <header>
+                <h1>Welcome To my Website <span id="greetingMessage"></span></h1>
+            </header>
+
+            <article>
+                <p>Lorem ipsum dolor sit amet.</p>
+
+
+                <div class="photo-banner">
+                     <img class="slides" src="assets/1.jpg" height="100%" width="100%">
+                     <img class="slides" src="assets/2.jpg" height="100%" width="100%">
+                     <img class="slides" src="assets/3.jpg" height="100%" width="100%">
+                </div>
+            </article>
+        </section>
+
+        <hr>
+
+<!-- Our Profile -->
+        <section id="profile">
+            <header>
+                <h1>Our Staff</h1>
+            </header>
+
+            <div class="flex-container">
+                <!-- Setiap item adalah gambar dengan teks di bawahnya -->
+                <div class="flex-item">
+                    <img src="assets/lia.jpg" height="80px" width="80px">
+                    <h1>Lia</h1>
+                    <p>Receptionist</p>
+                </div>
+                <div class="flex-item">
+                    <img src="assets/jhon.jpg" height="80px" width="80px">
+                    <h1>Jhon</h1>
+                    <p>Office Boy</p>
+                </div>
+                <div class="flex-item">
+                    <img src="assets/ren.jpg" height="80px" width="80px">
+                    <h1>Ren</h1>
+                    <p>Koordinator</p>
+                </div>
+            </div>
+
+        <hr>
+
+<!-- Portofolio -->
+        <section id="portofolio">
+            <header>
+                <h1>About</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, rem. Explicabo facere sit aspernatur quam eaque sequi tenetur praesentium quisquam?</p>
+            </header>
+            <div class="photo-porto">
+                <img class="pp" src="assets/lk.jpg" height="100%" width="100%">
+            </div>
+
+        </section>
+
+        <hr>
+
+<!-- Message Us -->
+        <section id="section-message-us">
+            <header>
+                <h1>Message Us</h1>
+            </header>
+            
+            <section class="form1">
+<!-- Form -->
+        <form id="userForm">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="birthdate">Tanggal Lahir:</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+
+            <label for="gender">Jenis Kelamin:</label>
+            <div class="radio-group">
+                <input type="radio" id="male" name="gender" value="Laki-laki" required>
+                <label for="male">Laki-laki</label>
+
+                <input type="radio" id="female" name="gender" value="Perempuan" required>
+                <label for="female">Perempuan</label>
+            </div>
+
+            <label for="message">Pesan:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit" class="submit">Submit</button>
+        </form>
+                
+<!-- Result -->
+        <form>
+            <div class="result">
+                <p>Nama: <span id="resultName"></span></p>
+                <p>Umur: <span id="resultAge"></span> tahun</p>
+                <p>Jenis Kelamin: <span id="resultGender"></span></p>
+                <p>Pesan: <span id="resultMessage"></span></p>
+            </div>
+        </form>
+            </section>
+        </section>
+    </main>
+
+    <hr>
+
+<!-- Footer -->
+    <footer id="footer">
+        <p>Made By ...</p>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
